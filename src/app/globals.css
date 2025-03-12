@@ -2,32 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-image: url('background.svg');
+  background-size:auto;
+  color: white;
+}
+/* src/ProgressBar.css */
+.cn
+{
+  width: 100%;
+}
+.progress-bar {
+  margin: 20px 0;
+  width: 80%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.skill-name {
+  font-weight: bold;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.progress {
+  border-radius: 5px;
+  position: relative;
+ 
+  height: 20px;
+  width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.progress-left-to-right {
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: width 4s ease-in-out, opacity 1s ease 0.3s;
+}
+
+.progress-left-to-right[style] {
+  opacity: 1;
+  width: 100%; /* Ajustez ici selon le niveau de progression */
+}
+
+.progress-right-to-left {
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: width 4s ease-in-out, opacity 1s ease 0.3s;
+  position: absolute;
+  right: 0;
+}
+
+.progress-right-to-left[style] {
+  opacity: 1;
+  width: 100%; /* Ajustez ici selon le niveau de progression */
+}
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* La vidéo est en arrière-plan */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20%;
 }
