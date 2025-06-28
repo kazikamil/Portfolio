@@ -1,7 +1,4 @@
 "use client"
-import designer from '../app/designer.svg'
-import dev from '../app/web_dev.svg'
-import prg from '../app/programming.svg'
 import Image from 'next/image';
 import innovation from '../app/innovation-animate.svg'
 import {Typewriter,useTypewriter,Cursors, Cursor} from 'react-simple-typewriter'
