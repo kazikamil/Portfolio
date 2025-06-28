@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
+import { motion, useInView } from "framer-motion"
 
 const projects = [
   /*{
@@ -85,7 +86,14 @@ export default function ProjectCarousel() {
 
   return (
     <div id="projects" className="flex-col items-center justify-center relative z-0 max-w-5xl py-24 mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold  mb-4">My Skills</h2>
+      <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold  mb-4">My Projects</h2>
+        </motion.div>
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
 
