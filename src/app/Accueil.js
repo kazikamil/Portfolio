@@ -13,15 +13,15 @@ export default function Accueil() {
       deleteSpeed:80,
    })
     return (
-      <div id='home' className='h-[700px] md:h-auto font-sans py-24'>
+      <div id='home' className='h-[600px] md:h-auto font-sans pt-16'>
         
-        <div className=" lg:mx-16 xl:mx-32 flex items-center justify-center lg:justify-between items-center mt-16 mb-36 ">
-           <div className="flex flex-col space-y-5 md:space-y-2 items-center lg:items-start  ">
+        <div className=" lg:mx-16 xl:mx-32 flex items-center justify-center lg:justify-between items-center mt-16  ">
+           <div className="flex flex-col space-y-5 md:space-y-5 items-center lg:items-start  ">
             <p className=" block font-bold text-8xl text-center lg:text-left  w-full text-outline">Kamil Kazi</p>
-            <div className="flex flex-col md:flex-row mb-2 block font-normal md:justify-center lg:justify-start text-3xl  text-center lg:text-left  w-full ">&nbsp;I'm a &nbsp; {' '}
+            <div className="flex flex-col md:flex-row mb-2  block font-normal md:justify-center lg:justify-start text-3xl  text-center lg:text-left  w-full ">&nbsp;I'm a &nbsp; {' '}
                <span className='font-bold text-emerald-400'>
                <Typewriter
-               words={['FullStack web developer', 'Graphic designer',]}
+               words={['FullStack developer', 'Graphic designer',]}
                loop={false}
                cursor
                
@@ -31,7 +31,7 @@ export default function Accueil() {
                 />
                </span>
             </div>
-            <a href="#" className="ml-1 mt-5 px-3 py-2 bg-emerald-500 text-white rounded-md text-sm font-medium hover:bg-emerald-700">Download My CV</a>
+            <a href="/Software_Engineer.docx" className="ml-1 mt-5 px-3 py-2 bg-emerald-500 text-white rounded-md text-sm font-medium hover:bg-emerald-700">Download My CV</a>
            </div>
            <div className='hidden lg:block'>
             <a href="https://storyset.com/technology">

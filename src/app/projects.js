@@ -6,27 +6,43 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
 const projects = [
-  {
+  /*{
     id: 1,
     title: "Label Designer",
     description: "A full-stack e-commerce solution with React and Node.js",
     images: ["/LabelDesigner.png", "/withGemini.png", "/LabelDesigner.png"],
     tools:['Next Js ',' Flask ',' Zebra Programming Language']
-  },
+  },*/
   {
     id: 2,
     title: "WithGemini",
-    description: "Real-time weather forecasting using OpenWeatherMap API",
-    images: ["/withGemini.png", "/LableDesigner.png"],
-    tools:['Next Js',' Flask',' Zebra Programming Language']
+    description: "An intelligent assistant built with Gemini that generates and sends emails, schedules tasks in Google Calendar, and boosts productivity through smart automation.",
+    images: ["/withGemini.png"],
+    tools:['Next Js','Django','Express JS']
     
   },
   {
     id: 3,
-    title: "Task Management System",
-    description: "A Kanban-style task manager built with Vue.js and Firebase",
-    images: ["/TaskManagement.png", "/TaskManagement2.png", "/TaskManagement3.png"],
-    tools:['Next Js',' Flask',' Zebra Programming Language']
+    title: "Qwiki",
+    description: "Qwiki is an intelligent delivery platform that streamlines last-mile logistics with real-time tracking, smart delivery assignment, and a seamless experience for clients, merchants, and delivery agents",
+    images: ["/del1.jfif", "/del2.jfif"],
+    tools:['FastAPI',' Express JS',' Kubernetess',' Kafka', ' MySQL',' MongoDB']
+
+  },
+  {
+    id: 4,
+    title: "Cac batna",
+    description: "A medical platform that allows patients to ask doctors questions and includes management of healthcare services and health-related events.",
+    images: ["/cap.jpg"],
+    tools:['Express JS',' Porstegres']
+
+  },
+  {
+    id: 5,
+    title: "StockXpert",
+    description: "A stock management system that manages inventory, user roles, order tracking, and generates PDF/Excel reports",
+    images: ["/stock.jfif", "/stock2.jfif"],
+    tools:['Express JS',' MySQL',' Google Sheet API']
 
   },
 ]

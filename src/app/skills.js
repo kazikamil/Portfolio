@@ -48,6 +48,8 @@ const skills = [
   { name: "Responsive Design", level: 80, icon: <Smartphone className="w-5 h-5" />, category: "design" },
   { name: "Git/GitHub", level: 70, icon: <Settings className="w-5 h-5" />, category: "other" },
   { name: "C", level: 90, icon: <Code className="w-5 h-5" />, category: "other" },
+  { name: "Docker", level: 70, icon: <Settings className="w-5 h-5" />, category: "other" },
+  { name: "Kubernetess", level: 50, icon: <Server className="w-5 h-5" />, category: "other" },
 ]
 
 export default function SkillsSection() {
