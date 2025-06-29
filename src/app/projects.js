@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: "Qwiki",
     description: "Qwiki is an intelligent delivery platform that streamlines last-mile logistics with real-time tracking, smart delivery assignment, and a seamless experience for clients, merchants, and delivery agents",
-    images: ["/del1.jfif", "/del2.jfif"],
+    images: ["/del1.png", "/del2.png"],
     tools:['FastAPI',' Express JS',' Kubernetess',' Kafka', ' MySQL',' MongoDB']
 
   },
@@ -42,7 +42,7 @@ const projects = [
     id: 5,
     title: "StockXpert",
     description: "A stock management system that manages inventory, user roles, order tracking, and generates PDF/Excel reports",
-    images: ["/stock.jfif", "/stock2.jfif"],
+    images: ["/stock.png", "/stock2.png"],
     tools:['Express JS',' MySQL',' Google Sheet API']
 
   },
